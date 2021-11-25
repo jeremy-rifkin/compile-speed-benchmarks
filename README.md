@@ -13,12 +13,16 @@ is used we can get a lower-bound for the relative performance between the compil
 
 Benchmarks done with gcc 10 and clang 12
 
-|                  | GCC     | Clang          |
-| ---------------- |:-------:|:--------------:|
-| OpenCV Debug     | 12m 29s | 10m 52s (-12%) |
-| OpenCV Release   | 18m 44s | 9m 11s  (-51%) |
-| Mongo DB Debug   | 1h 32m  | 1h 5m (-29%)   |
-| Mongo DB Release | 1h 57m  | 1h 19m  (-32%) |
+|                  | GCC     | Clang           |
+| ---------------- |:-------:|:---------------:|
+| OpenCV Debug     | 12m 29s | 10m 52s (-12%)  |
+| OpenCV Release   | 18m 44s | 9m 11s  (-51%)  |
+| Mongo DB Debug   | 1h 32m  | 1h 5m (-29%)    |
+| Mongo DB Release | 1h 57m  | 1h 19m  (-32%)  |
+| GCC Release*     | 12m 8s  | 11m 36s (-4.4%) |
+
+`*`: Note: Clang only used in the initial phases of compilation.
+
 <!--| Chromium Release | .       | 5h 30m  |-->
 <!--| Chromium Debug   | .       | 5h 15m  |-->
 
